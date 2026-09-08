@@ -2,7 +2,10 @@
 
 # add code below ...
 def palindrome(word):
-    '''This function receives a string and returns True or False to indicate whether or not it is a palindrome.'''
+    '''
+        This function receives a string and returns True or False to 
+        indicate whether or not it is a palindrome.
+    '''
 
     punctuation = '.,?! '
     for char in punctuation:
@@ -14,7 +17,10 @@ def palindrome(word):
     return True
 
 def parentheses(sequence):
-    '''This function takes a string and returns True or False depending on if the string's parentheses are balanced.'''
+    '''
+        This function takes a string and returns True or False depending on 
+        if the string's parentheses are balanced.
+    '''
 
     open_count = 0
 

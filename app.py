@@ -5,17 +5,23 @@ from apputil import *
 
 st.write(
 '''
-# Week x: [Title]
+# Week 1: String Manipulation
 
 ...
 ''')
 
-# currently set for integer input
-amount = st.number_input("Exercise Input: ", 
-                         value=None, 
-                         step=1, 
-                         format="%d")
 
-if amount is not None:
-    st.write(f"The exercise input was {amount}.")
+pal_text = st.text_input('Check this text to see if it is a palindrome: ',
+                                 value=None)
 
+if pal_text and palindrome(pal_text):
+    st.write('It\'s a  palindrome!')
+elif pal_text:
+    st.write('It\'s not a palindrome.')
+
+par_text = st.text_input('Check this text for parenthetical balance: ')
+
+if par_text and parentheses(par_text):
+    st.write('It\'s balanced!')
+elif par_text:
+    st.write('It\'s not balanced.')
